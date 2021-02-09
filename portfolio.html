@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
      <link rel="preconnect" href="https://fonts.gstatic.com" />
+     
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -25,8 +27,19 @@
        
         <address class="address">
          <ul class="address__list" >
-          <li class="address__list-item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="address__list-item"><a href="tel:+380961111111">+380961111111</a></li>
+          <li class="address__list-item"><a  href="mailto:info@devstudio.com"> 
+            
+            <svg class="icon" width="16" height="12">
+                <use href="./img/symbol-defs.svg#icon-envelope">
+                </use>
+              </svg>
+            info@devstudio.com</svg></li>
+          <li class="address__list-item"><a href="tel:+380961111111">
+              <svg class="icon" width="10" height="16">
+              <use href="./img/symbol-defs.svg#icon-smartphone">
+              </use>
+            </svg>
+            +380961111111</a></li>
           </ul>
         </address>
       </nav>
@@ -113,12 +126,14 @@
     </main>
      <footer  class="footer">
        <div class="container">
-        <a class="logo" href="#">Web<span class="logo-span-footer">Studio</span></a>
-        <address  class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
+        <a class="logo logo-footer" href="#">Web<span class="logo-span-footer">Studio</span></a>
+        <address >
+          <a   class="footer__address" target="_blank" href="https://goo.gl/maps/u5AVHtxzXWnErXXr5">г. Киев, пр-т Леси Украинки, 26</a>
         <ul>
         <li><a class="footer__contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a class="footer__contact" href="tel:+380961111111">+380961111111</a></li>
         </ul>
+        </address>
         </div>
       </footer>
   </body>
